@@ -1,2 +1,6 @@
 template:
 https://www.w3schools.com/w3css/tryw3css_templates_band.htm 
+
+
+cỡ luôn là bội của 4
+icon lấy từ themify icon

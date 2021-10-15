@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Helvetica, Arial, sans-serif; 
+}
+#main {
+
+}
+/* Header */
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav {
+    display: inline-block; /* thì search-icon mới lên ngang hàng được*/
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+    
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav li:hover .subnav{
+    display: block;
+
+}
+#nav > li:hover > a,
+#nav .subnav > li:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+
+    line-height: 46px;
+    padding: 0 22px;
+    display: inline-block;/* de hover vao se sam ca o */
+}
+#nav > li > a {
+    text-transform: uppercase;
+}
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); green, blue, alpha)
+}
+#nav .subnav li {
+    display: block;
+}
+#nav .subnav a {
+    color: black;
+    display: block; /*để cho nó có màu hết cả ô ngang, cho nó width là 100% cx đc*/
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .search-btn {
+    
+    color: white;
+    font-size: 20px;
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+}
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+/* Slider */
+#slider {
+    margin-top: 46px;
+    height: 1000px;
+    background-color: #ccc;
+}
+#content {
+
+}
+#footer {
+
+}
