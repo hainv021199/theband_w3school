@@ -17,6 +17,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1; /* ko có thì sau khi thêm slider nav lại bị chìm xuống */
 }
 #nav {
     display: inline-block; /* thì search-icon mới lên ngang hàng được*/
@@ -89,12 +90,64 @@ html {
 /* Slider */
 #slider {
     margin-top: 46px;
-    height: 1000px;
-    background-color: #ccc;
+    padding-top: 50%; /* 50% chiều ngang của chính nó*/
+    background-image: url(/assets/img/slider1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
-#content {
+#slider .text-content {
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); /* ngoài cách căn giữa này còn hai cách như width: 100% hay left, right: 0 hay margin-left, margin-right: auto*/
+    text-align: center; /* can giua cho chu */
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
 
 }
+#slider .text-description {
+    
+    font-size: 15px;
+}
+
+/* content */
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500px;
+    letter-spacing: 4px; /* khoang cach cac chu*/
+}
+#content .section-heading,
+#content .section-sub-heading {
+    text-align: center;
+}
+#content .section-sub-heading {
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic; /* phong cach cua chu*/
+    opacity: 0.6;
+}
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify; /* căn đều hai lề */
+    line-height: 1.4; /* tiếng anh thường là 1.4 tiếng việt thường là 1.6 */
+}
+
+
+
+/* footer */
 #footer {
 
 }
