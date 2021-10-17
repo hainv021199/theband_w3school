@@ -9,6 +9,24 @@ html {
 .text-white {
     color: white !important; /* important chỉ dùng cho những cái riêng lẻ như này thì mới dễ kiểm soát */
 }
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-top: 22px;
+    border: none;
+}
+.btn:hover {
+    background-color: #ccc;
+
+    color: #000;
+    cursor: pointer;
+}
+.pull-right {
+    float: right !important;
+}
 .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -159,7 +177,7 @@ html {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 #content .section-heading {
     font-size: 30px;
@@ -237,7 +255,7 @@ html {
 
 #content .place-list {
     margin: 32px 0px;
-    padding-bottom: 110px;
+   
 }
 #content .place-list::after {
     content: '';
@@ -278,14 +296,7 @@ html {
     margin-top: 15px;
 
 }
-#content .place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 10px 16px;
-    display: inline-block;
-    margin-top: 22px;
-}
+
 #content .place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
@@ -420,9 +431,35 @@ html {
     padding: 10px 16px;
     float: right;
 }
-.form-submit-btn:hover {
-    background-color: #ccc;
 
-    color: #000;
-    cursor: pointer;
+
+/* map */
+.map-section {
+    width: 100%;
+}
+
+/* footer */
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list {
+    font-size: 24px;
+}
+#footer .socials-list a {
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
+}
+#footer .copyright a {
+    color: rgba(0,0,0,0.6);
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    color: rgba(0,0,0,0.4);
 }
