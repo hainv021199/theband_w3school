@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 html {
+    scroll-behavior: smooth; /* để khi ấn vào các nav thì cuộn xuống một cách mượt mà */
     font-family: Helvetica, Arial, sans-serif; 
 }
 .text-white {
@@ -62,9 +63,7 @@ html {
 .text-center {
     text-align: center !important;
 }
-#main {
 
-}
 /* Header */
 #header {
     height: 46px;
@@ -118,7 +117,7 @@ html {
     top: 100%;
     left: 0;
     min-width: 160px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3); green, blue, alpha)
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 #nav .subnav li {
     display: block;
@@ -207,8 +206,7 @@ html {
 }
 
 
-#content .member-name {
-}
+
 #content .member-img {
     margin-top: 24px; 
     border-radius: 4px;
@@ -303,10 +301,6 @@ html {
 }
 
 
-
-/* footer */
-#footer {
-}
 
 /* Modal */
 
