@@ -9,6 +9,7 @@ html {
 .text-white {
     color: white !important; /* important chỉ dùng cho những cái riêng lẻ như này thì mới dễ kiểm soát */
 }
+
 #main {
 
 }
@@ -263,5 +264,99 @@ html {
 
 
 /* footer */
-#foote
+#footer {
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open {
+    display: flex;
+} 
+.modal-container {
+    background-color: #fff;
+    position: relative;
+    max-width: calc(100% - 32px);
+    width: 900px;
+    animation: modalFadeIn ease 0.5s;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding: 8px 16px;
+ 
+    opacity: 0.9;
+    cursor: pointer;
+}
+.modal-close:hover {
+    opacity: 1;
+}
+.modal-header {
+    background-color: #009688;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 32px 16px;
+}
+.modal-header i {
+    margin-right: 16px;
+}
+.modal-body {
+    padding: 16px;
+}
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+.modal .buy-tickets {
+    border: none;
+    background-color: #009688;
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+}
+.modal .buy-tickets:hover {
+    cursor: pointer;
+    opacity: 0.9;
+
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+
+}
+.modal-footer a {
+    color: #009688;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        trasform: translateY(0);
+    }
 }
