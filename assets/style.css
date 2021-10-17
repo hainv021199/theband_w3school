@@ -9,7 +9,41 @@ html {
 .text-white {
     color: white !important; /* important chỉ dùng cho những cái riêng lẻ như này thì mới dễ kiểm soát */
 }
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
 
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full {
+    width: 100%;
+}
+.col-third {
+    width: calc(100% /3);
+
+}
+.col-half {
+    width: calc(100%/2);
+}
+.mt-8 {
+    margin-top: 8px!important;
+}
+.mt-16 {
+    margin-top: 16px!important;
+}
+.text-center {
+    text-align: center !important;
+}
 #main {
 
 }
@@ -153,11 +187,7 @@ html {
     margin-top: 48px;
 
 }
-#content .member-item {
-    float: left;
-    width: calc(100% /3);
-    text-align: center;
-}
+
 
 #content .member-name {
 }
@@ -206,7 +236,7 @@ html {
 }
 
 #content .place-list {
-    margin: 32px -8px 0px;
+    margin: 32px 0px;
     padding-bottom: 110px;
 }
 #content .place-list::after {
@@ -215,9 +245,9 @@ html {
     clear: both;
 }
 #content .place-item {
-    float: left;
+ 
     width: calc(100%/3);
-    padding: 0 8px;
+ 
 }
 #content .place-img {
     width: 100%;
@@ -359,4 +389,40 @@ html {
     to {
         trasform: translateY(0);
     }
+}
+
+
+/* Contact */
+
+.contact-content {
+    padding-top: 48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i[class*="ti-"] {
+    display: inline-block;
+    width: 30px;
+}
+.contact-form .form-control {
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+.form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+}
+.form-submit-btn:hover {
+    background-color: #ccc;
+
+    color: #000;
+    cursor: pointer;
 }
